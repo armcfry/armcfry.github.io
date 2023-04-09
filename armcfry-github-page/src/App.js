@@ -12,14 +12,18 @@ function App() {
     <div>
       In the meantime, please reach out at my other contact links:
     </div>
-      <div class="link-box">
-        <a href="mailto:armcfry@gmail.com">Email Me</a>
-      </div>
-      <div class="link-box">
-        <a href="https://www.linkedin.com/in/armcfry64">LinkedIn</a>
-      </div>
-      <div class="link-box">
-        <a href="https://github.com/armcfry">GitHub</a>
+    <div>
+      <a href="mailto:armcfry@gmail.com" target="_blank" rel="noopener noreferrer">
+        <button className="button-link">Email Me</button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/armcfry64" target="_blank" rel="noopener noreferrer">
+        <button className="button-link">LinkedIn</button>
+      </a>
+
+      <a href="https://github.com/armcfry" target="_blank" rel="noopener noreferrer">
+        <button className="button-link">GitHub</button>
+      </a>
     </div>
   </header>
 </div>
