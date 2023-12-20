@@ -26,7 +26,7 @@ function About() {
               </div>
               <div className="w3-container">
                 <h2>Adam McFry</h2>
-                <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-red"></i>Senior Software Development Engineer in Test</p>
+                <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-red"></i>Senior SDET</p>
                 <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Glendale, CA</p>
                 <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>armcfry@gmail.com</p>
                 <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>(256) 689-6898</p>

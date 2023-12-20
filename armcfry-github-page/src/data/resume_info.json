@@ -8,7 +8,7 @@
     },
     "experience": [
         {
-            "company": "Hexagon ALI",
+            "company": "Hexagon",
             "role": "Senior Software Development Engineer in Test",
             "start_date": "July 2023",
             "end_date": "Present",
@@ -22,7 +22,7 @@
             "description": "Automated API tests in Python for a data pipeline service using PyTest and Jenkins pipelines.\nLed load testing effort using AWS Fargate and the Locust testing platform.\nAssumed the role of Scrum Master to implement Agile practices and increase development productivity. Led Scrum ceremony meetings and organized sprint planning and implementation efforts."
         },
         {
-            "company": "Hexagon ALI",
+            "company": "Hexagon",
             "role": "Software Development Engineer in Test",
             "start_date": "June 2020",
             "end_date": "November 2021",
