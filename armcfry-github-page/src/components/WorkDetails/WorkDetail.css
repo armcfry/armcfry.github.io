@@ -1,22 +1,33 @@
 button[type=collapse] {
-    background-color: #ac1717;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  /* .active, .collapsible:hover {
+  background-color: #ac1717;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* .active, .collapsible:hover {
     background-color: #ffffff;
   } */
-  
+
 content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #404040;
+  padding: 5px 5px 5px 5px;
+  text-align: left;
+  text-justify: inter-word;
+}

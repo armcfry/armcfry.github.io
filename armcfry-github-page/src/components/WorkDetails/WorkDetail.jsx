@@ -1,7 +1,7 @@
 import './WorkDetail.css'
 import React, { useState } from 'react';
 
-const WorkDetail = () => {
+const WorkDetail = ({ workDetails }) => {
   const [isActive, setIsActive] = useState(false);
   const [maxHeight, setMaxHeight] = useState('0px');
 
@@ -12,9 +12,7 @@ const WorkDetail = () => {
 
   return (
     <div>
-      <button type="collapse" onClick={handleCollapse}>
-        {isActive ? 'Close Collapsible' : 'Open Collapsible'}
-      </button>
+      <button type="collapse" onClick={handleCollapse}>{workDetails.role}</button>
 
       <div
         className="collapsible"
@@ -22,12 +20,7 @@ const WorkDetail = () => {
       >
         {isActive && (
           <div>
-            <p>
-                "Something"
-            </p>
-            <p>
-                "Something else"
-            </p>
+            {workDetails.description.split('\n').map((line, index) => <p key={index}>{line}</p>)}
           </div>
         )}
       </div>
