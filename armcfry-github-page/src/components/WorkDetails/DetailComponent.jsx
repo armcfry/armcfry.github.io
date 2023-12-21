@@ -1,7 +1,7 @@
-import './WorkDetail.css'
+import './DetailComponent.css'
 import React, { useState } from 'react';
 
-const WorkDetail = ({ workDetails }) => {
+const DetailComponent = ({ imageName, titleText, bodyText }) => {
   const [isActive, setIsActive] = useState(false);
   // start in open state instead of closed state
   const [maxHeight, setMaxHeight] = useState('5000px');
@@ -14,10 +14,10 @@ const WorkDetail = ({ workDetails }) => {
     <div>
       <button type="collapse" onClick={handleCollapse} className="right-align container-button button">
         <div className="image-container">
-          <img src={require(`../../images/${workDetails.company}_logo_transparent.png`)} alt="Company Logo" className="company-logo" />
+          <img src={require(`../../images/${imageName}`)} alt="Company Logo" className="company-logo" />
         </div>
         <div className="text-container">
-          <p1 className="role">{workDetails.role}</p1>
+          <p1 className="role">{titleText}</p1>
         </div>
       </button>
 
@@ -25,10 +25,9 @@ const WorkDetail = ({ workDetails }) => {
         className="collapsible"
         style={{ maxHeight: maxHeight, transition: 'max-height 0.2s ease-in-out' }}
       >
+        {/* make this dynamic to allow for the body text to have multiple list entries */}
         {!isActive && (
-          <div>
-            {workDetails.description.split('\n').map((line, index) => <li key={index}>{line}</li>)}
-          </div>
+          <>{bodyText.map((line, index) => <li key={index}>{line}</li>)}</>
         )}
 
       </div>
@@ -36,4 +35,4 @@ const WorkDetail = ({ workDetails }) => {
   );
 };
 
-export default WorkDetail;
+export default DetailComponent;

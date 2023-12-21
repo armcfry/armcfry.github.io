@@ -1,9 +1,9 @@
-import DetailComponent from './DetailComponent';
+import EducationDetail from './DetailComponent';
 import React, { useState } from 'react';
-import './WorkDetailContainer.css';
+import './EducationDetailContainer.css';
 import resume_info from '../../data/resume_info.json';
 
-const WorkDetailContainer = ({title}) => {
+const EducationDetailContainer = ({title}) => {
     const [isActive, setIsActive] = useState(false);
     const [maxHeight, setMaxHeight] = useState('0px');
     const handleCollapse = () => {
@@ -13,8 +13,8 @@ const WorkDetailContainer = ({title}) => {
 
     return (
         <div style={{paddingBottom: '30px'}}>
-            <button type="collapse" onClick={handleCollapse} className="workExperience">
-                <h2><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
+            <button type="collapse" onClick={handleCollapse} className="EducationExperience">
+                <h2><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
             </button>
 
             <div
@@ -23,8 +23,8 @@ const WorkDetailContainer = ({title}) => {
             >
                 {isActive && (
                     <div className="w3-container w3-card w3-white w3-margin-bottom" style={{paddingTop: '30px'}}>
-                        {resume_info.experience.map((entry, index) => (
-                            <DetailComponent key={index} imageName={entry.image} titleText={entry.role} bodyText={entry.description} />
+                        {resume_info.education.map((entry, index) => (
+                            <EducationDetail key={index} imageName={entry.image} titleText={entry.degree} bodyText={[entry.college, `GPA: ${entry.gpa}`]} />
                         ))}
                     </div>
                 )}
@@ -34,4 +34,4 @@ const WorkDetailContainer = ({title}) => {
     );
 };
 
-export default WorkDetailContainer;
+export default EducationDetailContainer;

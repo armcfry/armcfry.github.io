@@ -1,10 +1,40 @@
 {
-    "skills":{
-        "programming_langauages":["Python", "C#", "Java", "Javascript", "Swift", "C++", "PowerShell"],
-        "testing_tools":["PyTest", "VSTest", "Selenium", "WebDriverIO", "Jasmine", "SpecFlow", "Jenkins", "Locust"],
-        "CI_CD":["Jenkins", "Azure DevOps", "Terraform", "Datadog"],
-        "software":["PyCharm", "VSCode", "Visual Studio", "Xcode", "Eclipse"],
-        "cloud": ["AWS: Fargate, Lambda, ECS, DynamoDB, CloudWatch"]
+    "skills": {
+        "programming_langauages": [
+            "Python",
+            "C#",
+            "Java",
+            "Javascript",
+            "Swift",
+            "C++",
+            "PowerShell"
+        ],
+        "testing_tools": [
+            "PyTest",
+            "VSTest",
+            "Selenium",
+            "WebDriverIO",
+            "Jasmine",
+            "SpecFlow",
+            "Jenkins",
+            "Locust"
+        ],
+        "CI_CD": [
+            "Jenkins",
+            "Azure DevOps",
+            "Terraform",
+            "Datadog"
+        ],
+        "software": [
+            "PyCharm",
+            "VSCode",
+            "Visual Studio",
+            "Xcode",
+            "Eclipse"
+        ],
+        "cloud": [
+            "AWS: Fargate, Lambda, ECS, DynamoDB, CloudWatch"
+        ]
     },
     "experience": [
         {
@@ -12,31 +42,48 @@
             "role": "Senior Software Development Engineer in Test",
             "start_date": "July 2023",
             "end_date": "Present",
-            "description": "Created and developed testing pipelines in Azure.\nEnhanced the testing process by developing PowerShell scripts for seamless installation and modification of test dependencies, including the setup of local components.\nDrafted and maintained web-based automated tests using WebDriverIO, Jasmine, and Javascript."
+            "description": [
+                "Created and developed testing pipelines in Azure.",
+                "Enhanced the testing process by developing PowerShell scripts for seamless installation and modification of test dependencies, including the setup of local components.",
+                "Drafted and maintained web-based automated tests using WebDriverIO, Jasmine, and Javascript."
+            ],
+            "image": "Hexagon_logo_transparent.png"
         },
         {
             "company": "Trimble",
             "role": "Software Development Engineer in Test",
             "start_date": "November 2021",
             "end_date": "July 2023",
-            "description": "Automated API tests in Python for a data pipeline service using PyTest and Jenkins pipelines.\nLed load testing effort using AWS Fargate and the Locust testing platform.\nAssumed the role of Scrum Master to implement Agile practices and increase development productivity. Led Scrum ceremony meetings and organized sprint planning and implementation efforts."
+            "description": [
+                "Automated API tests in Python for a data pipeline service using PyTest and Jenkins pipelines.",
+                "Led load testing effort using AWS Fargate and the Locust testing platform.",
+                "Assumed the role of Scrum Master to implement Agile practices and increase development productivity. Led Scrum ceremony meetings and organized sprint planning and implementation efforts."
+            ],
+            "image": "Trimble_logo_transparent.png"
         },
         {
             "company": "Hexagon",
             "role": "Software Development Engineer in Test",
             "start_date": "June 2020",
             "end_date": "November 2021",
-            "description": "Pioneered the drafting and development of over thirty L2 and L3 automated tests for SmartLicensing client and server testing using C# and VS Test.\nAutomated server web application tests using Selenium and SpecFlow frameworks.\nImplemented new automated tests and corresponding test plans in a pipeline framework using Azure DevOps.\nLed and established a collaboration environment for over 60 SDETs throughout Hexagon PPM. Held monthly information sessions to share automation processes."
+            "description": [
+                "Pioneered the drafting and development of over thirty L2 and L3 automated tests for SmartLicensing client and server testing using C# and VS Test.",
+                "Automated server web application tests using Selenium and SpecFlow frameworks.",
+                "Implemented new automated tests and corresponding test plans in a pipeline framework using Azure DevOps.",
+                "Led and established a collaboration environment for over 60 SDETs throughout Hexagon PPM. Held monthly information sessions to share automation processes."
+            ],
+            "image": "Hexagon_logo_transparent.png"
         }
     ],
     "education": [
         {
             "college": "The University of Alabama in Huntsville",
             "degree": "B.S. Computer Science",
-            "gpa": 3.89
+            "gpa": 3.89,
+            "image": "UAH_logo_transparent.png"
         }
     ],
-    "certifications":[
+    "certifications": [
         {
             "certification": "Disciplined Agile Scrum Master",
             "date": "December 2022"
@@ -45,7 +92,7 @@
     "projects": [
         {
             "name": "The Domino Effect",
-            "date":"December 2020",
+            "date": "December 2020",
             "description": "Developed an iOS application using Xcode and Swift that allows users to select a list of domino pieces and sort them to find the most efficient “path” for a game of dominos.\nImplemented custom branch and bound algorithm to sort the user’s list of dominos most efficiently to yield the most points in a round."
         }
     ]

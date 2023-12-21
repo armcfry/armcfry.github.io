@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkDetailContainer from '../components/WorkDetails/WorkDetailContainer';
+import EducationDetailContainer from '../components/WorkDetails/EducationDetailContainer';
 import './About.css';
 
 function About() {
@@ -57,9 +58,9 @@ function About() {
 
           <div className="w3-twothird">
             {/* <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '30px'}}> */}
-            <WorkDetailContainer title={"Work Details"} />
+            <WorkDetailContainer title={"Work Experience"} />
             {/* fa fa-certificate */}
-            {/* <WorkDetailContainer title={"Education"} /> */}
+            <EducationDetailContainer title={"Education"} />
             {/* </div> */}
           </div>
         </div>
