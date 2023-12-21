@@ -11,8 +11,8 @@ export default class PageRoutes extends Component {
         <HashRouter>
             <Routes>
                 <Route path="/" element={<Layout />}/>
-                <Route index element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route index element={<About />} />
+                {/* <Route path="/about" element={<About />} /> */}
                 {/* <Route path="/resume" element={<Resume />} />
                 <Route path="/contact" element={<Contact />} /> */}
                 <Route path="*" element={<NoPage />} />

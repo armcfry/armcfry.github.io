@@ -1,3 +1,18 @@
 div {
     padding-bottom: 15px;
 }
+
+workExperience {
+    background-color: #ffffff;
+    color: rgb(245, 4, 4);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

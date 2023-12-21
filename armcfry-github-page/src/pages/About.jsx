@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkDetailContainer from '../components/WorkDetails/WorkDetailContainer';
+import './About.css';
 
 function About() {
   return (
@@ -28,11 +29,16 @@ function About() {
                 <h2>Adam McFry</h2>
                 <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-red"></i>Senior SDET</p>
                 <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Glendale, CA</p>
-                <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>armcfry@gmail.com</p>
+                <p>
+                  <a href="mailto:armcfry@gmail.com" target="_blank" rel="noopener noreferrer" className="w3-hover-opacity">
+                    <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>
+                  </a>
+                  armcfry@gmail.com
+                </p>
                 <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>(256) 689-6898</p>
 
                 <p>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="w3-hover-opacity">
+                  <a href="https://linkedin.com/in/armcfry64" target="_blank" rel="noopener noreferrer" className="w3-hover-opacity">
                     <i className="fa fa-linkedin w3-margin-right"></i>
                   </a>
                   Connect on LinkedIn
@@ -48,19 +54,17 @@ function About() {
               </div>
             </div>
           </div>
+
           <div className="w3-twothird">
-            <div className="w3-container w3-card w3-white w3-margin-bottom">
-              <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Work Experience</h2>
-              <WorkDetailContainer/>
-            </div>
-            <div className="w3-container w3-card w3-white">
-              <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Education</h2>
-              {/* ... (education entries) ... */}
-            </div>
+            {/* <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '30px'}}> */}
+            <WorkDetailContainer title={"Work Details"} />
+            {/* fa fa-certificate */}
+            {/* <WorkDetailContainer title={"Education"} /> */}
+            {/* </div> */}
           </div>
         </div>
-      </div>
-    </html>
+      </div >
+    </html >
   );
 }
 

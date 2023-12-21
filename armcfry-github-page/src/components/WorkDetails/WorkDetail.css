@@ -60,6 +60,7 @@ p1 {
   align-items: center;
 }
 
+/* change the format of the role text on mobile */
 @media (max-width: 768px) {
   .button {
     flex-direction: column;
