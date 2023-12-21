@@ -57,11 +57,8 @@ function About() {
           </div>
 
           <div className="w3-twothird">
-            {/* <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '30px'}}> */}
             <WorkDetailContainer title={"Work Experience"} />
-            {/* fa fa-certificate */}
             <EducationDetailContainer title={"Education"} />
-            {/* </div> */}
           </div>
         </div>
       </div >
