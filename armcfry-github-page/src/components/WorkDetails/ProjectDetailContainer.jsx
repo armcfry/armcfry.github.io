@@ -1,9 +1,9 @@
 import DetailComponentTile from './DetailComponentTile';
 import React, { useState } from 'react';
-import './WorkDetailContainer.css';
+import './ProjectDetailContainer.css';
 import resume_info from '../../data/resume_info.json';
 
-const WorkDetailContainer = ({ title }) => {
+const WorkDetailContainer = ({title}) => {
     const [isActive, setIsActive] = useState(false);
     const [maxHeight, setMaxHeight] = useState('0px');
     const handleCollapse = () => {
@@ -12,25 +12,16 @@ const WorkDetailContainer = ({ title }) => {
     };
 
     return (
-        <div style={{ paddingBottom: '30px' }}>
+        <div style={{paddingBottom: '30px'}}>
             <button type="collapse" onClick={handleCollapse} className="workExperience">
                 <h2><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
             </button>
 
-            <div
-                className="tile-container"
-            // style={{ maxHeight: maxHeight, transition: 'max-height 0.2s ease-in-out' }}
-            >
+            <div className="tile-container">
                 {isActive && (
                     <>
-                        {resume_info.experience.map((entry, index) => (
-                            <DetailComponentTile
-                                key={index}
-                                imageName={entry.image}
-                                titleText={entry.role}
-                                bodyText={entry.description}
-                                headerText={entry.start_date + " - " + entry.end_date}
-                            />
+                        {resume_info.projects.map((entry, index) => (
+                            <DetailComponentTile key={index} imageName="" titleText={entry.name} bodyText={entry.description} headerText={entry.date} />
                         ))}
                     </>
                 )}

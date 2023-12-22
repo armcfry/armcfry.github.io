@@ -1,0 +1,100 @@
+button[type=collapse] {
+  background-color: #ada7a7;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .active, .collapsible:hover {
+    background-color: #ffffff;
+  } */
+
+content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+li {
+  font-size: 15px;
+  font-family: 'Arial';
+  font-weight: 400;
+  line-height: 1.5;
+  color: #404040;
+  padding: 3px 15px 5px 30px;
+  text-indent: -20px;
+  text-align: left;
+  text-justify: inter-word;
+}
+
+p1 {
+  font-size: 18px;
+  font-family: 'Arial';
+  line-height: 1.5;
+  color: #000000;
+  padding: 5px 5px 5px 5px;
+  text-align: left;
+  text-justify: inter-word;
+}
+
+.detail-tile {
+  display:grid;
+  max-width: 49.1%;
+  background-color: #c9c9c9;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  align-items: left;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  height: 60px;
+}
+
+.text-container {
+  display: flex;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+/* change the format of the role text on mobile */
+@media (max-width: 800px) {
+  .button {
+    flex-direction: column;
+  }
+
+  .detail-tile {
+    display:grid;
+    max-width: 100%;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    align-items: left;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}
+
+/* .collapsible {
+
+} */

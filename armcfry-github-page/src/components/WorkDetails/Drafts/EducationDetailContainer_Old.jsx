@@ -1,4 +1,4 @@
-import DetailComponentTile from './DetailComponentTile';
+import EducationDetail from './DetailComponent';
 import React, { useState } from 'react';
 import './EducationDetailContainer.css';
 import resume_info from '../../data/resume_info.json';
@@ -17,20 +17,23 @@ const EducationDetailContainer = ({title}) => {
                 <h2><i className="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
             </button>
 
-            <div className='tile-container'>
+            <div
+                className="collapsible"
+                style={{ maxHeight: maxHeight, transition: 'max-height 0.2s ease-in-out' }}
+            >
                 {isActive && (
-                    <>
+                    <div className="w3-container w3-card w3-white w3-margin-bottom" style={{paddingTop: '30px'}}>
                         {resume_info.education.map((entry, index) => (
-                            <DetailComponentTile key={index} imageName={entry.image} titleText={entry.degree} bodyText={[entry.college, `GPA: ${entry.gpa}`]} />
+                            <EducationDetail key={index} imageName={entry.image} titleText={entry.degree} bodyText={[entry.college, `GPA: ${entry.gpa}`]} />
                         ))}
-                    </>
+                    </div>
                 )}
                 {isActive && (
-                    <>
+                    <div className="w3-container w3-card w3-white" style={{paddingTop: '30px'}}>
                         {resume_info.certifications.map((entry, index) => (
-                            <DetailComponentTile key={index} imageName={entry.image} titleText={`${entry.title} Certification`} bodyText={[entry.company, entry.date]} />
+                            <EducationDetail key={index} imageName={entry.image} titleText={`${entry.title} Certification`} bodyText={[entry.company, entry.date]} />
                         ))}
-                    </>
+                    </div>
                 )}
 
             </div>

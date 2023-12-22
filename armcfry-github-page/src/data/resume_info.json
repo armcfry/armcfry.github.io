@@ -85,15 +85,20 @@
     ],
     "certifications": [
         {
-            "certification": "Disciplined Agile Scrum Master",
-            "date": "December 2022"
+            "company": "Project Management Institute",
+            "title": "Disciplined Agile Scrum Master",
+            "date": "December 2022",
+            "image": "PMI_logo.png"
         }
     ],
     "projects": [
         {
             "name": "The Domino Effect",
             "date": "December 2020",
-            "description": "Developed an iOS application using Xcode and Swift that allows users to select a list of domino pieces and sort them to find the most efficient “path” for a game of dominos.\nImplemented custom branch and bound algorithm to sort the user’s list of dominos most efficiently to yield the most points in a round."
+            "description": [
+                "Developed an iOS application using Xcode and Swift that allows users to select a list of domino pieces and sort them to find the most efficient “path” for a game of dominos.",
+                "Implemented custom branch and bound algorithm to sort the user’s list of dominos most efficiently to yield the most points in a round."
+            ]
         }
     ]
 }

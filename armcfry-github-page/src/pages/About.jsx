@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkDetailContainer from '../components/WorkDetails/WorkDetailContainer';
 import EducationDetailContainer from '../components/WorkDetails/EducationDetailContainer';
+import ProjectDetailContainer from '../components/WorkDetails/ProjectDetailContainer';
 import './About.css';
 
 function About() {
@@ -59,6 +60,7 @@ function About() {
           <div className="w3-twothird">
             <WorkDetailContainer title={"Work Experience"} />
             <EducationDetailContainer title={"Education"} />
+            <ProjectDetailContainer title={"Projects"} />
           </div>
         </div>
       </div >

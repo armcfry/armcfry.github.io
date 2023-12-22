@@ -16,3 +16,14 @@ EducationExperience {
     align-items: center;
     justify-content: space-between;
 }
+
+.tile-container {
+    /* flex-direction: column; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
