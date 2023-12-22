@@ -12,7 +12,7 @@ const DetailComponentTile = ({ imageName = "", titleText, bodyText, headerText="
 
   return (
     <div className="detail-tile">
-      <div>
+      <div style={{bottomMargin:'0px'}}>
       {imageName ? (
           <img src={require(`../../images/${imageName}`)} alt="Company Logo" className="company-logo" />
         ) : (

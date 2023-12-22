@@ -47,7 +47,7 @@ p1 {
 }
 
 .detail-tile {
-  display:grid;
+  /* display:grid; */
   max-width: 49.1%;
   background-color: #c9c9c9;
   color: rgb(0, 0, 0);

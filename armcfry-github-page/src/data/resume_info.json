@@ -99,6 +99,13 @@
                 "Developed an iOS application using Xcode and Swift that allows users to select a list of domino pieces and sort them to find the most efficient “path” for a game of dominos.",
                 "Implemented custom branch and bound algorithm to sort the user’s list of dominos most efficiently to yield the most points in a round."
             ]
+        },
+        {
+            "name": "Standup Timer Remix",
+            "date": "May 2023",
+            "description": [
+                "Simple React application that can be used for a standup timer for Scrum standup meetings."
+            ]
         }
     ]
 }
