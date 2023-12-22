@@ -1,8 +1,4 @@
-div {
-    padding-bottom: 15px;
-}
-
-EducationExperience {
+.educationExperience {
     background-color: #ffffff;
     color: rgb(245, 4, 4);
     cursor: pointer;
@@ -18,9 +14,7 @@ EducationExperience {
 }
 
 .tile-container {
-    /* flex-direction: column; */
     margin-top: 15px;
-    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;

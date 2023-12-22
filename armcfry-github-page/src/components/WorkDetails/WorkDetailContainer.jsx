@@ -12,15 +12,12 @@ const WorkDetailContainer = ({ title }) => {
     };
 
     return (
-        <div style={{ paddingBottom: '30px' }}>
+        <div>
             <button type="collapse" onClick={handleCollapse} className="workExperience">
-                <h2><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
+                <h2><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-white"></i>{title}</h2>
             </button>
 
-            <div
-                className="tile-container"
-            // style={{ maxHeight: maxHeight, transition: 'max-height 0.2s ease-in-out' }}
-            >
+            <div className="tile-container">
                 {isActive && (
                     <>
                         {resume_info.experience.map((entry, index) => (
@@ -34,7 +31,6 @@ const WorkDetailContainer = ({ title }) => {
                         ))}
                     </>
                 )}
-
             </div>
         </div>
     );

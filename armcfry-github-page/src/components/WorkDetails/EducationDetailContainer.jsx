@@ -12,9 +12,9 @@ const EducationDetailContainer = ({title}) => {
     };
 
     return (
-        <div style={{paddingBottom: '30px'}}>
-            <button type="collapse" onClick={handleCollapse} className="EducationExperience">
-                <h2><i className="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>{title}</h2>
+        <div>
+            <button type="collapse" onClick={handleCollapse} className="educationExperience">
+                <h2><i className="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-white"></i>{title}</h2>
             </button>
 
             <div className='tile-container'>
