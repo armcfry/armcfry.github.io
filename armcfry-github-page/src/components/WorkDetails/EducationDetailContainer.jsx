@@ -28,7 +28,7 @@ const EducationDetailContainer = ({title}) => {
                 {isActive && (
                     <>
                         {resume_info.certifications.map((entry, index) => (
-                            <DetailComponentTile key={index} imageName={entry.image} titleText={`${entry.title} Certification`} bodyText={[entry.company, entry.date]} />
+                            <DetailComponentTile key={index} imageName={entry.image} titleText={`${entry.title}`} bodyText={[entry.company, entry.date]} />
                         ))}
                     </>
                 )}

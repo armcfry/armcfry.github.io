@@ -16,11 +16,13 @@ const DetailComponentTile = ({ imageName = "", titleText, bodyText, headerText="
       {imageName ? (
           <img src={require(`../../images/${imageName}`)} alt="Company Logo" className="company-logo" />
         ) : (
-          <div className="placeholder-image">No Image</div>
+          <div className="placeholder-image"></div>
         )}
-        <p1 className="role">{headerText}</p1>
+        <div>
+          <h3 className="role">{titleText}</h3>
+        </div>
       </div>
-      <p1 className="role">{titleText}</p1>
+      <p1 className="role">{headerText}</p1>
       <div
         className="collapsible"
         style={{ maxHeight: maxHeight, transition: 'max-height 0.2s ease-in-out' }}
