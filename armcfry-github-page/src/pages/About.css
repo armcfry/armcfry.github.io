@@ -1,0 +1,11 @@
+.w3-twothird {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .w3-twothird {
+        margin-top: 20px;
+    }
+}
