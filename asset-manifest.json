@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d6059ac.css",
-    "main.js": "/static/js/main.20c27cf4.js",
+    "main.css": "/static/css/main.5b9d83d9.css",
+    "main.js": "/static/js/main.7f033887.js",
     "static/js/787.3dcde88d.chunk.js": "/static/js/787.3dcde88d.chunk.js",
+    "static/media/profile_pic.png": "/static/media/profile_pic.97ea9b885bcc97d9a443.png",
+    "static/media/UAH_logo_transparent.png": "/static/media/UAH_logo_transparent.7fe77d85c61d39811d69.png",
+    "static/media/Hexagon_logo_transparent.png": "/static/media/Hexagon_logo_transparent.1a2b8d6fab4b368b7561.png",
     "static/media/announce_sp.jpg": "/static/media/announce_sp.dc6281bfd2038dba28fc.jpg",
+    "static/media/Trimble_logo_transparent.png": "/static/media/Trimble_logo_transparent.9c819b11003d89d3b957.png",
+    "static/media/PMI_logo.png": "/static/media/PMI_logo.fe8d56aa6a3d95dd27ab.png",
     "index.html": "/index.html",
-    "main.4d6059ac.css.map": "/static/css/main.4d6059ac.css.map",
-    "main.20c27cf4.js.map": "/static/js/main.20c27cf4.js.map",
+    "main.5b9d83d9.css.map": "/static/css/main.5b9d83d9.css.map",
+    "main.7f033887.js.map": "/static/js/main.7f033887.js.map",
     "787.3dcde88d.chunk.js.map": "/static/js/787.3dcde88d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d6059ac.css",
-    "static/js/main.20c27cf4.js"
+    "static/css/main.5b9d83d9.css",
+    "static/js/main.7f033887.js"
   ]
 }
